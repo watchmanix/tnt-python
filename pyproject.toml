@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tnt-python"
-version = "0.1.0"
+version = "0.1.3"
 description = "Telegram notification tool"
 license = "MIT"
 maintainers = ["axeman <axeman.ofic@gmail.com>"]
