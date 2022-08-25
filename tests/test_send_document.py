@@ -2,7 +2,8 @@ import os
 
 from dotenv import load_dotenv
 
-from tnt_python.types import FileData, DocumentType
+from tnt_python.types import DocumentType, ResponseSuccessType
+from tnt_python.data import FileData
 from tnt_python.file_creator import FileCreator
 from tnt_python.services import NotifyerService
 
@@ -20,6 +21,6 @@ def test_send_document():
     file_creator.write("Hello world".encode())
 
     document = DocumentType(document=file_creator.file)
-    status = NotifyerService.send_document(data, document, token)
+    response = NotifyerService().send_document(data, document, token)
     file_creator.close()
-    assert status == 200
+    assert response.status_code == 200 and isinstance(response.result, ResponseSuccessType)
