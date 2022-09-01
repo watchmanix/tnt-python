@@ -1,4 +1,8 @@
 # tnt-python
+[![Dependencies](https://img.shields.io/librariesio/github/watchmanix/tnt-python)](https://pypi.org/project/tnt-python/)
+[![Version](https://img.shields.io/pypi/v/tnt-python?color=green)](https://pypi.org/project/tnt-python/)
+[![Downloads](https://pepy.tech/badge/tnt-python/month)](https://pepy.tech/project/tnt-python)
+[![Downloads](https://pepy.tech/badge/tnt-python/week)](https://pepy.tech/project/tnt-python)
 
 tnt - Telegram notification tool
 
